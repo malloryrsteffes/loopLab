@@ -4,6 +4,44 @@ body {
 }
 
 .navbar {
-  border-bottom: #008ed6 3px solid;
+  border-bottom: rgba(151, 136, 151) 3px solid;
   opacity: 0.8;
+  background: rgba(44, 44, 52);
+}
+
+#home-section {
+  background-image: url("../assets/img/home-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 700px;
+}
+
+#home-section .dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 700px;
+  background: rgb(0, 0, 0, 0.7);
+}
+
+#home-section .home-inner {
+  padding-top: 150px;
+}
+
+#home-section .card {
+  background: rgba(151, 136, 151);
+  padding: 5px;
+}
+
+#home-section .card-form {
+  opacity: 0.8;
+}
+
+#home-section .fas {
+  color: rgba(98, 85, 98);
+  background: #fff;
+  padding: 5px;
+  border-radius: 5px;
 }
