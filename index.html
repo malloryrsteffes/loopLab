@@ -20,7 +20,7 @@
     ></script>
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
       <div class="container">
@@ -35,7 +35,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a href="#home" class="nav-link">Home</a>
+              <a href="#home-section" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
               <a href="#explore-head-section" class="nav-link">Explore</a>
@@ -43,6 +43,9 @@
             <li class="nav-item">
               <a href="#create-head-section" class="nav-link">Create</a>
             </li>
+            <li class="nav-item">
+                <a href="#collect-head-section" class="nav-link">Collect</a>
+              </li>
             <li class="nav-item">
               <a href="#share-head-section" class="nav-link">Share</a>
             </li>
@@ -308,6 +311,111 @@
         </div>
       </div>
     </section>
+    <!-- COLLECT HEAD -->
+    <section id="collect-head-section">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center py-5">
+            <h1 class="display-4">Collect</h1>
+            <p class="lead header-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, optio
+              dignissimos iusto minima architecto delectus eligendi! A ea culpa
+              iure!
+            </p>
+            <a href="#" class="btn btn-outline-secondary header-btn"
+              >Find Out More</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Collect SECTION -->
+    <!-- Photo by Vladyslav Dushenkovskyi -->
+    <section id="collect-section" class="text-white py-5">
+      <div class="dark-overlay">
+        <section class="gallery-block grid-gallery">
+          <div class="container">
+            <div class="row text-center">
+              <div class="col-md-12">
+                <h3 class="my-5">Collect</h3>
+              </div>
+              <div class="col-md-6 col-lg-4 item">
+                <a class="lightbox" href="../assets/img/image1.jpg">
+                  <img
+                    class="img-fluid image scale-on-hover"
+                    src="../assets/img/image1.jpg"
+                  />
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-4 item">
+                <a class="lightbox" href="../assets/img/image2.jpg">
+                  <img
+                    class="img-fluid image scale-on-hover"
+                    src="../assets/img/image2.jpg"
+                  />
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-4 item">
+                <a class="lightbox" href="../assets/img/image3.jpg">
+                  <img
+                    class="img-fluid image scale-on-hover"
+                    src="../assets/img/image3.jpg"
+                  />
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-4 item">
+                <a class="lightbox" href="../assets/img/image4.jpg">
+                  <img
+                    class="img-fluid image scale-on-hover"
+                    src="../assets/img/image4.jpg"
+                  />
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-4 item">
+                <a class="lightbox" href="../assets/img/image5.jpg">
+                  <img
+                    class="img-fluid image scale-on-hover"
+                    src="../assets/img/image5.jpg"
+                  />
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-4 item">
+                <a class="lightbox" href="../assets/img/image6.jpg">
+                  <img
+                    class="img-fluid image scale-on-hover"
+                    src="../assets/img/image6.jpg"
+                  />
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-4 item">
+                <a class="lightbox" href="../assets/img/image7.jpg">
+                  <img
+                    class="img-fluid image scale-on-hover"
+                    src="../assets/img/image7.jpg"
+                  />
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-4 item">
+                <a class="lightbox" href="../assets/img/image8.jpg">
+                  <img
+                    class="img-fluid image scale-on-hover"
+                    src="../assets/img/image8.jpg"
+                  />
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-4 item">
+                <a class="lightbox" href="../assets/img/image9.jpg">
+                  <img
+                    class="img-fluid image scale-on-hover"
+                    src="../assets/img/image9.jpg"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
     <!-- SHARE HEAD -->
     <section id="share-head-section">
       <div class="container">
@@ -332,15 +440,8 @@
       <div class="dark-overlay">
         <div class="container">
           <div class="row">
-            <div class="col-md-5 py-5">
-              <img
-                src="./assets/img/jar.jpg"
-                alt="Photo by Rakicevic Nenad from
-              Pexels"
-                class="img-fluid mb-3"
-              />
-            </div>
-            <div class="col-md-7">
+            <div class="col-md-6 py-5"></div>
+            <div class="col-md-6">
               <h3 class="my-5">Share</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,
@@ -463,5 +564,7 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.slim.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
