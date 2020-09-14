@@ -6,6 +6,9 @@ body {
   color: #fff;
 }
 
+section {
+  position: relative;
+}
 .navbar {
   border-bottom: rgba(151, 136, 151) 3px solid;
   opacity: 0.8;
