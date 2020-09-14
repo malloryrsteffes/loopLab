@@ -114,6 +114,11 @@ body {
   background-attachment: fixed;
   min-height: 800px;
 }
+@media (max-width: 768px) {
+  #create-section {
+    min-height: 1000px;
+  }
+}
 
 #create-section .dark-overlay,
 #share-section .dark-overlay {
