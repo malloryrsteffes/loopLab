@@ -6,15 +6,15 @@ body {
   color: #fff;
 }
 
-section {
-  position: relative;
-  min-height: 800px;
-}
+/* NAV */
+
 .navbar {
   border-bottom: rgba(151, 136, 151) 3px solid;
   opacity: 0.8;
   background: rgba(44, 44, 52);
 }
+
+/* HOME SECTION AND FORM */
 
 .header-text {
   max-width: 75%;
@@ -62,12 +62,33 @@ section {
   color: rgb(151, 135, 151);
 }
 
+/* HEADER SECTIONS */
+
+#explore-head-section,
+#create-head-section,
+#collect-head-section,
+#share-head-section {
+  background-color: #333;
+  scroll-margin-top: 50px;
+}
+
 .header-btn {
   transition: all 0.5s ease;
 }
 .header-btn:hover {
   background-color: rgba(98, 85, 98);
   border-color: rgb(151, 135, 151);
+}
+
+#explore-section,
+#create-section,
+#share-section,
+#collect-section {
+  position: relative;
+  min-height: 800px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 #explore-section img,
@@ -79,10 +100,39 @@ section {
     0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
     0 16px 16px rgba(0, 0, 0, 0.12);
 }
+
 #explore-section,
 #collect-section {
   background-color: rgb(65, 57, 65);
 }
+
+#create-section {
+  background-image: url("../assets/img/mountains.jpg");
+}
+
+#share-section {
+  background-image: url("../assets/img/share.jpg");
+}
+
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgb(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  #explore-section,
+  #create-section,
+  #share-section,
+  #collect-section,
+  .dark-overlay {
+    min-height: 1100px;
+  }
+}
+
+/* ICONS */
 
 #create-section .fas {
   color: #fff;
@@ -90,6 +140,10 @@ section {
   padding: 5px;
   border-radius: 5px;
   transition: all 0.5s ease;
+}
+
+#create-section .fas:hover {
+  background: rgb(151, 135, 151);
 }
 
 #explore-section .fas,
@@ -105,52 +159,8 @@ section {
 #share-section .fas:hover {
   color: rgba(151, 136, 151);
 }
-#create-section .fas:hover {
-  background: rgb(151, 135, 151);
-}
 
-#create-section {
-  background-image: url("../assets/img/mountains.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-@media (max-width: 768px) {
-  section,
-  .dark-overlay {
-    min-height: 1100px;
-  }
-}
-
-#create-section .dark-overlay,
-#share-section .dark-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: rgb(0, 0, 0, 0.5);
-}
-
-#create-section img {
-  max-height: 600px;
-  border-radius: 10px;
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-}
-
-#share-section {
-  background-image: url("../assets/img/share.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-#explore-head-section,
-#create-head-section,
-#collect-head-section,
-#share-head-section {
-  background-color: #333;
-  scroll-margin-top: 50px;
-}
+/* FOOTER */
 
 .site-footer {
   background-color: #26272b;
