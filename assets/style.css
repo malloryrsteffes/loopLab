@@ -8,6 +8,7 @@ body {
 
 section {
   position: relative;
+  min-height: 800px;
 }
 .navbar {
   border-bottom: rgba(151, 136, 151) 3px solid;
@@ -25,7 +26,6 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  min-height: 700px;
 }
 
 #home-section .dark-overlay {
@@ -110,16 +110,15 @@ section {
 }
 
 #create-section {
-  position: relative;
   background-image: url("../assets/img/mountains.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  min-height: 800px;
 }
 @media (max-width: 768px) {
-  #create-section {
-    min-height: 1000px;
+  section,
+  .dark-overlay {
+    min-height: 1100px;
   }
 }
 
@@ -129,7 +128,6 @@ section {
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 800px;
   background: rgb(0, 0, 0, 0.5);
 }
 
@@ -140,12 +138,10 @@ section {
 }
 
 #share-section {
-  position: relative;
   background-image: url("../assets/img/share.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  min-height: 800px;
 }
 
 #explore-head-section,
