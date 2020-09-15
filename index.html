@@ -525,6 +525,7 @@
             <ul class="footer-links">
               <li><a href="#explore-head-section">Explore</a></li>
               <li><a href="#create-head-section">Create</a></li>
+              <li><a href="#collect-head-section">Collect</a></li>
               <li><a href="#share-head-section">Share</a></li>
             </ul>
           </div>
@@ -535,7 +536,7 @@
         <div class="row">
           <div class="col-md-8 col-sm-6 col-xs-12">
             <p class="copyright-text">
-              Copyright &copy; 2020 All Rights Reserved by
+              Copyright &copy; <span id="year"></span> All Rights Reserved by
               <a href="#">Mallory Steffes</a>.
             </p>
           </div>
@@ -543,16 +544,28 @@
           <div class="col-md-4 col-sm-6 col-xs-12">
             <ul class="social-icons">
               <li>
-                <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+                <a
+                  class="facebook"
+                  href="mailto:&#109;&#097;&#108;&#114;&#115;&#116;&#101;&#102;&#102;&#101;&#115;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"
+                  ><i class="fa fa-mail"></i
+                ></a>
               </li>
               <li>
-                <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+                <a
+                  class="github"
+                  href="https://www.github.com/malloryrsteffes"
+                  target="_blank"
+                >
+                  <i class="fa fa-github"></i
+                ></a>
               </li>
               <li>
-                <a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a>
-              </li>
-              <li>
-                <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                <a
+                  class="linkedin"
+                  href="https://www.linkedin.com/in/mallorysteffes"
+                  target="_blank"
+                  ><i class="fa fa-linkedin"></i
+                ></a>
               </li>
             </ul>
           </div>
@@ -565,4 +578,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
     <script src="app.js"></script>
   </body>
+  <script>
+    // Get the current year for the copyright
+    $("#year").text(new Date().getFullYear);
+  </script>
 </html>
