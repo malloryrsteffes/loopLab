@@ -283,10 +283,10 @@ body {
   width: 34px;
   font-size: 14px;
 }
-.social-icons a.facebook:hover {
+.social-icons a.envelope:hover {
   background-color: #3b5998;
 }
-.social-icons a.twitter:hover {
+.social-icons a.instagram:hover {
   background-color: #00aced;
 }
 .social-icons a.linkedin:hover {
