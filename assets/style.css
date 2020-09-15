@@ -26,6 +26,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  min-height: 800px;
 }
 
 #home-section .dark-overlay {
