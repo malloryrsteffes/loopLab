@@ -284,7 +284,7 @@ body {
   font-size: 14px;
 }
 .social-icons a.envelope:hover {
-  background-color: #3b5998;
+  background-color: rgba(151, 136, 151);
 }
 .social-icons a.instagram:hover {
   background: linear-gradient(
